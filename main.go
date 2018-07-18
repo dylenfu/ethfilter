@@ -7,10 +7,6 @@ import (
 	"time"
 )
 
-// 使用eth_newPendingTransactionFilter获取filterId
-// 该filterId存储在以太坊节点内存中(重启后无效)
-// 使用eth_getFilterChanges获取pendingTransactionHash
-
 var (
 	client   *rpc.Client
 	filterId string = "0x42de2bf5a88b642b51cf50d786328b21"
